@@ -2,24 +2,37 @@ import React from 'react';
 import './header.css';
 
 
-export default function Header(){
+export default function Header(props){
     return (
-        <header>
-        <div className='siteNameDiv'>
+        props.state === 'initial' ?
 
-            <div className = "siteName">door<span className="siteNameBlack">Devs</span></div>
+            <header>
 
-        </div>
-    {/*<div className="navLinksDiv">*/}
+                <div className='siteNameDiv'>
 
-    {/*        <div className="navLink">faq</div>*/}
-    {/*        <div className="navLink">work</div>*/}
-    {/*        <div className="navLink">signup</div>*/}
-    {/*        <div className="navLink">login</div>*/}
+                    <div className = "siteName">door<span className="siteNameBlack">Devs</span></div>
 
-    {/*    </div>*/}
+                </div>
 
-        </header>
+            </header>
+
+        :
+
+            <header className="gunMetalgrayBG">
+
+                <div className='siteNameDiv gunMetalgrayBG'>
+
+                    <div className = "siteName leftAligned">door<span className="siteNameBlack">Devs</span></div>
+
+                    <div className="navLinksDiv gunMetalgrayBG">
+
+                        <div className="navLink" onClick={()=>{props.changeState('initial')}}>{props.title}</div>
+
+                    </div>
+
+                </div>
+
+            </header>
 
     )
 }
