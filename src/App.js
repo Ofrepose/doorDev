@@ -4,7 +4,7 @@ import Header from  './components/header/headers';
 import MainPage from './components/mainPage/mainPage';
 import ResourcePage from './components/resourcePage/resourcePageMain';
 
-import './App.css';
+import './components/css/index.css';
 
 
 

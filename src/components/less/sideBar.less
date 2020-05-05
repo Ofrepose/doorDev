@@ -1,0 +1,60 @@
+section.sideBarSection{
+  background-color: darken(#f7f7f7,20%);
+  height: calc(100vh - 60px);
+  width:250px;
+  border-right: 1px solid #ececec;
+  overflow: scroll;
+  overflow-x: hidden;
+  position: fixed;
+  left:0;
+  top:60px;
+
+  .barDiv{
+    width: 68%;
+    display: flex;
+    //margin: auto;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    justify-items: flex-end;
+
+    .title{
+      margin-top: 15px;
+      width: 100%;
+      font-family: "Raleway";
+      letter-spacing: 2px;
+      font-size: 22px;
+      font-weight: 600;
+      height: 30px;
+      text-align: right;
+    }
+
+    .itemTitle{
+      min-width: 100%;
+      font-family: "Open Sans Condensed";
+      letter-spacing: 2px;
+      font-size: 19px;
+      height: 25px;
+      line-height: 25px;
+      text-align: right;
+      transition: .25s all ease-in-out;
+
+      &:hover{
+        cursor: pointer;
+        transition: .25s all ease-in-out;
+        color: cornflowerblue;
+
+      }
+    }
+
+  }
+
+}
+
+section.sideBarSection::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: cornflowerblue;
+}

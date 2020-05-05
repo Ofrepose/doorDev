@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './mainPage.css';
+import '../css/index.css';
 import TextField from '../forms/textField';
 import PasswordField from '../forms/passwordField';
 
@@ -67,6 +67,7 @@ export default function MainPage(){
                         <div className="pageTitleCenter blueTextDefault">Developer Sign-in</div>
 
                         <form className="businessSignUp">
+
                             <TextField label = 'Username'/><br />
                             <PasswordField  label = 'Password'/><br />
                             <div className="underFormText">New User? <span className="blueTextDefault">Create account</span></div>

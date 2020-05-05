@@ -1,5 +1,9 @@
 import React from 'react';
-import './header.css';
+import '../css/index.css';
+
+import NavLink from './navLinks';
+import Icons from '../icons/icons';
+
 
 
 export default function Header(props){
@@ -17,6 +21,7 @@ export default function Header(props){
             </header>
 
         :
+            props.state ==='resourcePage' ?
 
             <header className="gunMetalgrayBG">
 
@@ -26,13 +31,27 @@ export default function Header(props){
 
                     <div className="navLinksDiv gunMetalgrayBG">
 
-                        <div className="navLink" onClick={()=>{props.changeState('initial')}}>{props.title}</div>
+                           <NavLink changeState = {props.changeState}
+                                    title = {props.title}
+                           />
+
+                           <Icons iconId = {props.iconId}
+
+                                  clickHandler = {props.clickHandler}
+                           />
+
+
 
                     </div>
 
                 </div>
 
             </header>
+
+        :
+
+        <Header></Header>
+
 
     )
 }
