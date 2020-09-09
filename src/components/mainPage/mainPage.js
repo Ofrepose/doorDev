@@ -81,7 +81,7 @@ function MainPage(props){
 
                         <div className="rightPage">
 
-                            <div className="rightPageTitle">Business Application</div>
+                            <div className="rightPageTitle">Business Sign-in </div>
 
                                 <BusinessSignInForm stateChanger={stateChanger} />
 
@@ -105,7 +105,7 @@ function MainPage(props){
 
                             <div className="halfPageNoPhotoFlex">
 
-                                <div className="pageTitleCenter blueTextDefault">Developer Sign-in</div>
+                                <div className="pageTitleCenter blueTextDefault">Developer Application</div>
 
                                     <DeveloperSignUpForm stateChanger={stateChanger} />
 
