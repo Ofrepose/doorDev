@@ -26,6 +26,9 @@ export default function BasicTextFields(props) {
                 autoComplete="current-password"
                 variant="outlined"
                 className="inputField"
+                value={props.value}
+                name={props.name}
+                onChange={props.handleChange}
             />
             </div>
     );

@@ -18,7 +18,16 @@ export default function BasicTextFields(props) {
     return (
             <div>
             {/*<TextField id="standard-basic" label={props.label} className="inputField" />*/}
-            <TextField id="outlined-basic" label={props.label} variant="outlined" className="inputField" />
+            <TextField id="outlined-basic"
+                       label={props.label}
+                       variant="outlined"
+                       className="inputField"
+                       value={props.value}
+                       name={props.name}
+                       onChange={props.handleChange}
+
+
+            />
             </div>
     );
 }
