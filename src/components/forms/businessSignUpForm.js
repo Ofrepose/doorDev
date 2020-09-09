@@ -22,9 +22,9 @@ function BusinessSignUpForm(props){
 
 
     let formSchema = yup.object().shape({
-        contactName: yup.string().required("Please enter a contact name."),
-        businessName: yup.string().required("Please enter your business name."),
-        email: yup.string().email("This is not a valid email").required("Please enter your email."),
+        contactName: yup.string().required("Please enter a contact name"),
+        businessName: yup.string().required("Please enter your business name"),
+        email: yup.string().email("This is not a valid email").required("Please enter your email"),
         password: yup.string().required("Password is required").min(6, "Passwords must be at least 6 characters in length"),
         currentWebsite: yup.string(),
     });

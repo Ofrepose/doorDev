@@ -21,7 +21,7 @@ function BusinessSignInForm(props){
 
     let formSchema = yup.object().shape({
 
-        email: yup.string().email("This is not a valid email").required("Please enter your email."),
+        email: yup.string().email("This is not a valid email").required("Please enter your email"),
         password: yup.string().required("Password is required").min(6, "Passwords must be at least 6 characters in length"),
 
     });

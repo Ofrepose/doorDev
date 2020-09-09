@@ -22,9 +22,9 @@ function DeveloperSignUpForm(props){
 
 
     let formSchema = yup.object().shape({
-        firstName: yup.string().required("Please enter your first name."),
-        lastName: yup.string().required("Please enter your last name."),
-        email: yup.string().email("This is not a valid email").required("Please enter your email."),
+        firstName: yup.string().required("Please enter your first name"),
+        lastName: yup.string().required("Please enter your last name"),
+        email: yup.string().email("This is not a valid email").required("Please enter your email"),
         password: yup.string().required("Password is required").min(6, "Passwords must be at least 6 characters in length"),
 
     });
