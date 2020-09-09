@@ -62,7 +62,6 @@
   background-position: center center;
 }
 .leftPageTitle {
-  height: 30px;
   font-size: 30px;
   font-family: "Open Sans Condensed";
   letter-spacing: 3px;
@@ -96,13 +95,13 @@
   background-color: #f5f5f5;
 }
 .rightPageTitle {
-  height: 30px;
   font-size: 30px;
   font-family: "Open Sans Condensed";
   letter-spacing: 3px;
   color: cornflowerblue;
   font-weight: 700;
   margin: 30px auto;
+  width: 100%;
 }
 .businessSignUp {
   width: 80%;
@@ -163,7 +162,6 @@
   background-color: #f5f5f5;
 }
 .pageTitleCenter {
-  height: 30px;
   font-size: 30px;
   font-family: "Open Sans Condensed";
   letter-spacing: 3px;
