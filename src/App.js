@@ -16,10 +16,10 @@ function App(props) {
     const [stateMachine,setStateMachine] = useState('initial');
 
     useEffect(()=>{
-        console.log(props)
+
         props.initialLoad();
         props.loginDeveloper('dfasdfasfd');
-        console.log(props.isLoading)
+
     },[])
 
     const changeState = (x) =>{

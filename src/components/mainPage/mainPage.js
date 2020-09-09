@@ -16,7 +16,7 @@ import DeveloperSignUpForm from "../forms/developerSignUpForm";
 
 function MainPage(props){
     useEffect(()=>{
-        console.log(props)
+
     })
     const [introState,changeIntroState] = useState('intro');
 

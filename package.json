@@ -21,6 +21,7 @@
     "redux-thunk": "^2.3.0",
     "serialize-javascript": "^4.0.0",
     "websocket-extensions": "^0.1.4",
+    "yarn": "^1.22.5",
     "yup": "^0.29.3"
   },
   "scripts": {

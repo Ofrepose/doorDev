@@ -15,7 +15,7 @@ const apiURL = 'srsrtser'
 const apiURL_Login_Developer = 'asdfasfda'
 
 export const initialLoad = () => dispatch =>{
-    console.log('inside initial load action')
+
 
         dispatch({ type: INITIAL_LOAD_START })
         axios.get(apiURL)
@@ -23,20 +23,20 @@ export const initialLoad = () => dispatch =>{
                 dispatch({type: INITIAL_LOAD_SUCCESS, payload: res.data})
             })
             .catch(err => {
-                console.log('inside action catch error for initialLoad')
+
                 dispatch({type: INITIAL_LOAD_FAILURE, payload: err})
             })
 
 }
 
 export const loginDeveloper = (credentials) => {
-    console.log("being login action")
+
     return (dispatch) =>{
         dispatch({ type: LOGIN_DEVELOPER_START})
         return axiosWithAuth()
             .post(apiURL_Login_Developer, credentials)
             .then(res=>{
-                console.log("Inside axios with auth in login Developer action")
+
                 dispatch({ type: LOGIN_DEVELOPER_SUCCESS, payload: res.data})
             })
             .catch(err=>{

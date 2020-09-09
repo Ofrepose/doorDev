@@ -17,10 +17,10 @@ const initialState = {
 
 
 function actionReducer(state = initialState, action){
-    console.log('reducer', action.type);
+
     switch(action.type){
         case INITIAL_LOAD_START:
-            console.log("Initial load start in reducer")
+
             return {
                 ...state,
                 isLoading: true,
